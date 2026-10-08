@@ -1,0 +1,2 @@
+@echo off
+cmd /c powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\SendTo\Extract text.lnk');$s.TargetPath='%cd%\img2txt.cmd';$s.IconLocation='%cd%\img2txt.ico,0';$s.Save()"
